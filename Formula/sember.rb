@@ -1,25 +1,25 @@
 class Sember < Formula
   desc "Semantic line breaks for cleaner text and smaller, more manageable diffs."
   homepage "https://github.com/nickvigilante/sember"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nickvigilante/sember/releases/download/v0.1.2/sember-aarch64-apple-darwin.tar.xz"
-      sha256 "1ca555bcd409c25bdf1266b93f3f5c0b771ba884043c7785135b8665ca5716ea"
+      url "https://github.com/nickvigilante/sember/releases/download/v0.1.3/sember-aarch64-apple-darwin.tar.xz"
+      sha256 "6a1dc64ed37ad6d6db7d721ecd3e9276031121aee6c7153cff5f17fec1b23177"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nickvigilante/sember/releases/download/v0.1.2/sember-x86_64-apple-darwin.tar.xz"
-      sha256 "0a0fb8039f727418e5dfb288fb7fca15a8c636226121afc2b1a5dc9aeae6d71a"
+      url "https://github.com/nickvigilante/sember/releases/download/v0.1.3/sember-x86_64-apple-darwin.tar.xz"
+      sha256 "ea25c4b9b5c62f65d7df8c65f24ffc3e4da49914cc2f7b97c60f9c5a840260fc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nickvigilante/sember/releases/download/v0.1.2/sember-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "de62c7bb4091943b4e9025c871644c285e825fedc07c987d8a4385e3c3a22a42"
+      url "https://github.com/nickvigilante/sember/releases/download/v0.1.3/sember-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "b18cc7f8eff9f80ec15f1d9a95b072b156c6d8cb0f6701445814426b89a819ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nickvigilante/sember/releases/download/v0.1.2/sember-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "7d35c65e0329384950b0773c2f91092d35fe86b53df7a7757a54d2e25f5b76bf"
+      url "https://github.com/nickvigilante/sember/releases/download/v0.1.3/sember-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "f325be9ed685b48cb95f4acaa51e2ba42e8dca9b7a3a4656b91a99dc92ad894b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
